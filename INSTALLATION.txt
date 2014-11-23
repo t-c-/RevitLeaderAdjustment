@@ -1,0 +1,34 @@
+
+
+To Install:
+
+First: Copy RevitLeaderAdjustment.dll & LeaderAdjustmentIcon.png to a folder on your local machine.
+
+i.e.: "C:\Users\<User Name>\Documents\RevitPlugins\"
+
+
+
+
+Second:  copy the provided "LeaderAdjustment.addin" to your add folder.  
+
+This should be:  "C:\ProgramData\Autodesk\Revit\Addins\2013\LeaderAdjustment.addin".
+
+
+Third: open "LeaderAdjustment.addin" in Notepad or another text editor. 
+
+The text that says: 
+
+    <Assembly> 
+	[dll full path and name goes here] 
+    </Assembly>
+
+
+Should be changed to match Step 1:
+
+
+    <Assembly> 
+	C:\Users\<User Name>\Documents\RevitPlugins\RevitLeaderAdjustment.dll
+    </Assembly>
+
+
+You can now start Revit and adjust your Text Leaders.
